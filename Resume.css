@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Hovering effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
 }
 
@@ -19,13 +19,13 @@
 
 #header h1 {
     margin: 0;
-    font-size: 2.3vw; /* Adjust as needed */
+    font-size: 2.3vw; 
 }
 
 body, html {
     margin: 0;
     padding: 0;
-    height: auto; /* Increase the body height to allow scrolling */
+    height: auto; 
     font-family: 'Inter', sans-serif;
 }
 
@@ -33,25 +33,25 @@ body, html {
     position: absolute;
     top: 70px;
     left: 2%;
-    width: 50%; /* Half of the page */
+    width: 50%; 
     height: auto;
-    overflow-y: auto; /* Change to auto for scrollable content */
-    max-height: 700vh; /* Adjust height as needed */
-    font-family: 'Inter', sans-serif; /* Style the text */
-    text-align: left; /* Center the text */
-    transition: top 0.3s ease; /* Smooth transition for moving the text up */
-    padding: 20px; /* Added padding to create space between content and edges */
+    overflow-y: auto; 
+    max-height: 700vh; 
+    font-family: 'Inter', sans-serif; 
+    text-align: left; 
+    transition: top 0.3s ease; 
+    padding: 20px; 
 }
 
 
 #leftSide h2 {
-    margin-top: 30px; /* Increase spacing above each heading */
+    margin-top: 30px;
     margin-bottom: 30px;
     font-size: 1.9vw; 
 }
 
 #leftSide p {
-    margin-bottom: 25px;/* Increase spacing below each paragraph */
+    margin-bottom: 25px;
     font-size: 1.1vw; 
 }
 
@@ -68,9 +68,9 @@ body, html {
         padding: 2px;
         position: relative;
         border-radius: 10px;
-        overflow: hidden; /* This should clip any overflowing content */
+        overflow: hidden; 
         transition: box-shadow 0.3s ease;
-        width: calc(100% - 40px); /* Adjust width to account for padding */
+        width: calc(100% - 40px); 
     }
     
     .section:hover {
@@ -80,13 +80,13 @@ body, html {
     h2 {
         font-size: 28px;
         color: #333;
-        margin: 0; /* Reset margin */
-        padding-bottom: 10px; /* Add padding for spacing */
-        transition: transform 0.3s ease; /* Added transition for text */
+        margin: 0; 
+        padding-bottom: 10px; 
+        transition: transform 0.3s ease; 
     }
     
     .section:hover h2 {
-        transform: translateY(-5px); /* Lift up text on hover */
+        transform: translateY(-5px); 
     }
     
     .entry {
@@ -117,27 +117,27 @@ body, html {
         position: fixed;
         top: 0;
         right: 0;
-        width: 50%; /* Half of the page */
+        width: 50%; 
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center; /* Center the carousel */
-        overflow: hidden; /* Hide overflow */
+        justify-content: center; 
+        overflow: hidden; 
         background: linear-gradient(to bottom right, #33659b, #AEC6CF);
     }
     
     .container {
         width: 100%;
         display: flex;
-        justify-content: space-evenly; /* Distribute items evenly */
-        height: auto; /* Adjust height as needed */
+        justify-content: space-evenly; 
+        height: auto; 
         gap: 10px;
     }
     
     .container > div {
-        flex: 0 0 170px; /* Initial size */
+        flex: 0 0 170px; 
         border-radius: 0.5rem;
-        overflow: hidden; /* Ensure images don't overflow */
+        overflow: hidden; 
         transition: flex .4s ease;
         cursor: pointer;
         box-shadow: 1px 5px 15px #000000;
@@ -145,7 +145,7 @@ body, html {
     }
     
     .container > div:hover {
-        flex-grow: 1.1; /* Allow the container to grow on hover */
+        flex-grow: 1.1; 
         box-shadow: 1px 3px 15px #000000;
     }
     
@@ -157,12 +157,12 @@ body, html {
     }
     
     .container > div:hover {
-        flex: 0 0 300px; /* Increased size on hover */
+        flex: 0 0 300px; 
         box-shadow: 1px 3px 15px rgb(0, 0, 0);
     }
 
     .container > div:hover img {
-        transform: scale(1.4); /* Scale up image on hover */
+        transform: scale(1.4); 
     }
     
 #downloadButton {
@@ -175,20 +175,20 @@ body, html {
     text-decoration: none;
     font-size: 17px;
     border-radius: 7px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transition properties */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 #downloadButton:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smoother shadow on hover */
-    transform: translateY(-4px); /* Lift up button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-4px); 
 }
 
 :root {
     font-family: 'Inter', sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-feature-settings: 'liga' 1, 'calt' 1; 
 }
 
-/* Optionally use the variable font version in supporting browsers */
+
 @supports (font-variation-settings: normal) {
     :root { font-family: 'InterVariable', sans-serif; }
 }
@@ -206,8 +206,8 @@ body, html {
     transform: rotate(-45deg);
     animation: bounce 2s infinite;
     z-index: 2;
-    transition: opacity 0.5s ease; /* Add this line */
-    opacity: 1; /* Add this line */
+    transition: opacity 0.5s ease; 
+    opacity: 1; 
 }
 
 
@@ -235,11 +235,11 @@ body, html {
         font-size: 3vw; 
     }
     #leftSide p {
-        font-size: 2vw; /* Larger font for better readability on smaller screens */
+        font-size: 2vw; 
     }
 }
 
-/* Further adjustments for even smaller screens */
+
 @media only screen and (max-width: 480px) {
     body {
         font-size: 4vw; 
@@ -251,11 +251,11 @@ body, html {
         font-size: 5vw; 
     }
     #leftSide p {
-        font-size: 3.5vw; /* Larger font for better readability on smaller screens */
+        font-size: 3.5vw; 
     }
 }
 
-/* Dropdown styles */
+
 .entry {
     position: relative;
     margin-left: 20px;
