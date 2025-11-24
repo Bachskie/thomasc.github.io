@@ -87,13 +87,7 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.125rem;
-}
-
-.tagline {
-    font-size: 0.75rem;
-    color: var(--text-secondary);
-    font-weight: 500;
+    margin: 0;
 }
 
 .nav-links {
@@ -366,22 +360,27 @@ body {
 }
 
 /* About Section */
+.about-section {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f3f4f6 100%);
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
 .about-content {
     display: grid;
     gap: 3rem;
 }
 
 .about-text {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
     line-height: 1.8;
 }
 
-.intro-text {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--text-primary);
+.about-text p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    font-weight: 400;
 }
 
 .text-link {
@@ -817,10 +816,6 @@ body {
         font-size: 1rem;
     }
     
-    .tagline {
-        font-size: 0.65rem;
-    }
-    
     .download-btn {
         padding: 0.5rem 1rem;
         font-size: 0.75rem;
@@ -951,10 +946,6 @@ body {
     
     .logo h1 {
         font-size: 0.9rem;
-    }
-    
-    .tagline {
-        font-size: 0.6rem;
     }
     
     .download-btn {
