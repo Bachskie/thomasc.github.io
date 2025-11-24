@@ -1,164 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Thomas.C Resume</title>
+        <title>Thomas Cortenbach - Professional Resume</title>
+        <meta name="description" content="Professional resume of Thomas Cortenbach - Behaviour Change specialist with background in Psychology">
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="Resume.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-        <header id="header">
-            <div id="headerContent">
-                <h1>
-                    <span>THOMAS</span>
-                    <br>
-                    <span>CORTENBACH.</span>
-                </h1>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Thomas Cortenbach</h1>
+                    <p class="tagline">Behaviour Change Specialist</p>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#about">Over Mij</a></li>
+                    <li><a href="#education">Opleiding</a></li>
+                    <li><a href="#experience">Ervaring</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="Resume_Thomas.pdf" download="Resume_Thomas.pdf" class="download-btn">
+                    <i class="fas fa-download"></i> <span class="btn-text">Download CV</span>
+                </a>
             </div>
-            <a href="Resume_Thomas.pdf" download="Resume_Thomas.pdf" id="downloadButton">DOWNLOAD CV</a>
-        </header>
-        <div id="rightSide">
-            <div class="container">
-                <div><img src="IMG_1188.JPG" alt="Image"></div>
-                <div><img src="IMG_6774.JPG" alt="Image"></div>
-                <div><img src="IMG_9469.jpg" alt="Image"></div>
-                <div><img src="IMG_0919.JPG" alt="Image"></div>
-            </div>
-        </div>        
-    <div id="leftSide">
-        <div class="scrollDownArrow"></div> 
-        <div id="resume">
-            <div class="section">
-                <h2>OVER MIJ</h2>
-                <p>Ik heb een bachelor in Psychologie met een major in Medische Psychologie en een minor in Economische Psychologie. Vorig jaar heb ik mijn stage en thesis onderzoek afgerond bij de Inspectie Leefomgeving en Transport. Hierdoor heb ik de master Behaviour Change behaald.</p>
-                <p>Wat werkervaring betreft, ben ik onderzoeksstagiair geweest aan de Universiteit van Tilburg, waar ik heb bijgedragen aan verschillende studies. Ook heb ik meerdere jaren in de evenementen en horeca industrie gewerkt, waar ik verantwoordelijk was voor de dagelijkse gang van zaken en de coördinatie van kleine en grootschalige evenementen.</p>
-                <p>Buiten werk en studie ben ik een actief persoon die graag reist en nieuwe plekken verkent. Daarnaast ben ik bekwaam in de basisprincipes van Python, HTML, CSS, JavaScript en SwiftUI, wat me in staat stelt om deze pagina helemaal zelf te maken.</p>
-                <p>Alles wat op deze pagina wordt gepresenteerd, biedt slechts een klein inzicht van mij en mijn leven. Om mij echt beter te leren kennen, neem gerust <a href="#contact"><strong>contact</strong></a> op!</p>
-            </div>
-           <div class="section">
-      <h2>OPLEIDINGEN</h2>
-    <div class="entry">
-        <p><strong>Master</strong>  <em>Behaviour Change</em></p>
-        <p>Radboud Universiteit</p>
-        <p>2023 – 2024, Nijmegen</p>
-    </div>
-    <div class="entry">
-        <p><strong>Bachelor</strong>  <em>Psychologie</em> (Major: medisch, Minor: economische)</p>
-        <p>Tilburg Universiteit </p>
-        <p>2019 – 2023, Tilburg</p>
-    </div>
-    <div class="entry">
-        <p><strong>Propedeuse</strong> <em>International Business</em></p>
-        <p>Zuyd</p>
-        <p>2018 – 2019, Maastricht</p>
-    </div>
-</div>
+        </nav>
+        </nav>
 
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hallo, ik ben</span>
+                        <span class="name">Thomas Cortenbach</span>
+                    </h1>
+                    <p class="hero-subtitle">Behaviour Change Specialist | Psycholoog | Onderzoeker</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Neem Contact Op</a>
+                        <a href="#about" class="btn btn-secondary">Leer Mij Kennen</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-gallery">
+                        <div class="gallery-item"><img src="IMG_1188.JPG" alt="Thomas Cortenbach" loading="lazy"></div>
+                        <div class="gallery-item"><img src="IMG_6774.JPG" alt="Professional photo" loading="lazy"></div>
+                        <div class="gallery-item"><img src="IMG_9469.jpg" alt="Travel photo" loading="lazy"></div>
+                        <div class="gallery-item"><img src="IMG_0919.JPG" alt="Activity photo" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main id="mainContent">
+            <div class="content-wrapper">
+                
+                <!-- About Section -->
+                <section id="about" class="section">
+                    <div class="section-header">
+                        <h2>Over Mij</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="intro-text">Ik heb een bachelor in Psychologie met een major in Medische Psychologie en een minor in Economische Psychologie. Vorig jaar heb ik mijn stage en thesis onderzoek afgerond bij de Inspectie Leefomgeving en Transport. Hierdoor heb ik de master Behaviour Change behaald.</p>
+                            <p>Wat werkervaring betreft, ben ik onderzoeksstagiair geweest aan de Universiteit van Tilburg, waar ik heb bijgedragen aan verschillende studies. Ook heb ik meerdere jaren in de evenementen en horeca industrie gewerkt, waar ik verantwoordelijk was voor de dagelijkse gang van zaken en de coördinatie van kleine en grootschalige evenementen.</p>
+                            <p>Buiten werk en studie ben ik een actief persoon die graag reist en nieuwe plekken verkent. Daarnaast ben ik bekwaam in de basisprincipes van Python, HTML, CSS, JavaScript en SwiftUI, wat me in staat stelt om deze pagina helemaal zelf te maken.</p>
+                            <p>Alles wat op deze pagina wordt gepresenteerd, biedt slechts een klein inzicht van mij en mijn leven. Om mij echt beter te leren kennen, neem gerust <a href="#contact" class="text-link">contact</a> op!</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-brain"></i>
+                                <h3>Psychologie</h3>
+                                <p>Medisch & Economisch</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Onderzoek</h3>
+                                <p>Data & Analyse</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-users"></i>
+                                <h3>Gedragsverandering</h3>
+                                <p>Evidence-based</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-code"></i>
+                                <h3>Programming</h3>
+                                <p>Python, Web Dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section id="education" class="section">
+                    <div class="section-header">
+                        <h2>Opleidingen</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Master Behaviour Change</h3>
+                                    <span class="timeline-date">2023 – 2024</span>
+                                </div>
+                                <p class="timeline-institution">Radboud Universiteit, Nijmegen</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Bachelor Psychologie</h3>
+                                    <span class="timeline-date">2019 – 2023</span>
+                                </div>
+                                <p class="timeline-institution">Tilburg Universiteit, Tilburg</p>
+                                <p class="timeline-detail">Major: Medische Psychologie | Minor: Economische Psychologie</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Propedeuse International Business</h3>
+                                    <span class="timeline-date">2018 – 2019</span>
+                                </div>
+                                <p class="timeline-institution">Zuyd, Maastricht</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section id="experience" class="section">
+                    <div class="section-header">
+                        <h2>Werkervaring</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h3>Stage / Onderzoek</h3>
+                            <p class="company">Inspectie Leefomgeving en Transport - Rijksoverheid</p>
+                            <p class="period">2024 | Den Haag & Utrecht</p>
+                            <p class="description">Bij de Inspectie Leefomgeving en Transport schreef ik mijn afstudeer thesis en deed ik onderzoek naar het promoten van herbruikbaar servies in plaats van wegwerpplastic voor kleine horeca ondernemingen.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-glass-cheers"></i>
+                            </div>
+                            <h3>Host, Promotie en Horeca</h3>
+                            <p class="company">Showpony</p>
+                            <p class="period">2016 – 2024 | Amsterdam</p>
+                            <p class="description">Bij Showpony werkte ik aan diverse opdrachten voor grote klanten zoals Tommy Hilfiger, Heineken en Bacardi. Ik was actief als onderdeel van promotieteams, als host en in de horeca bij zowel kleinschalige als grootschalige evenementen.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                            <h3>Bestuursfunctie, Hoofd Media</h3>
+                            <p class="company">Studievereniging B-Change</p>
+                            <p class="period">2023 – 2024 | Nijmegen</p>
+                            <p class="description">Ik vervulde de rol van Hoofd Media bij studievereniging B-Change, verbonden aan de opleiding Behaviour Change aan de Radboud Universiteit. Verantwoordelijk voor het verspreiden van nieuws en onderhouden van nieuws kanalen.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3>Onderzoeksstagiair</h3>
+                            <p class="company">Procore/Optimum - Tilburg University</p>
+                            <p class="period">2020 – 2021 | Tilburg</p>
+                            <p class="description">Als onderzoeksstagiair droeg ik bij aan de Procore- en OPTIMUM-studies: onderzoek naar optimale zorg voor postmenopauzale borstkankerpatiënten. Verantwoordelijkheden omvatten transcriberen van interviews en beheren van data-invoer.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h3>Host</h3>
+                            <p class="company">Willem II</p>
+                            <p class="period">2020 – 2021 | Tilburg</p>
+                            <p class="description">Medeverantwoordelijk voor de begeleiding van wedstrijddagbezoekers met eerste-rang- of skyboxtickets.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <h3>Evenementen en Horeca Medewerker</h3>
+                            <p class="company">Van der Valk</p>
+                            <p class="period">2019 – 2020 | Tilburg</p>
+                            <p class="description">Bij Van der Valk Exclusief heb ik gewerkt in de bediening, bar en het organiseren van evenementen in een hotel van een hoger segment.</p>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="card-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Evenementen en Horeca Medewerker</h3>
+                            <p class="company">Parkhotel Horst</p>
+                            <p class="period">2016 – 2020 | Horst</p>
+                            <p class="description">Met een breed scala aan taken was ik mede verantwoordelijk voor de dagelijkse horeca-operaties. Groeide door van bediening naar het beheren van grootschalige evenementen en het coördineren van hospitality voor internationale voetbaltrainingskampen.</p>
+                        </div>
+                    </div>
+                </section>
         
-            <div class="section">
-                <h2>WERKERVARING</h2>
-                <div class="entry">
-                    <p><strong>Stage / Onderzoek</strong></p>
-                    <p>Inspectie Leefomgeving en Transport - Rijksoverheid</p>
-                    <p>2024, Den Haag & Utrecht</p>
-                    <div class="dropdown-content">
-                        <p> Bij de Inspectie Leefomgeving en Transport schreef ik mijn afstudeer thesis en deed ik onderzoek naar het promoten van herbruikbaar servies in plaats van wegwerpplastic voor kleine horeca ondernemingen</p>
+                <!-- Volunteer Section -->
+                <section id="volunteer" class="section">
+                    <div class="section-header">
+                        <h2>Vrijwilligerswerk</h2>
+                        <div class="section-line"></div>
                     </div>
-                </div>
-                <div class="entry">
-                    <p><strong>Host, promotie en horeca</strong></p>
-                    <p>Showpony</p>
-                    <p>2016 – 2024, Amsterdam</p>
-                    <div class="dropdown-content">
-                        <p>Bij Showpony werkte ik aan diverse opdrachten voor grote klanten zoals Tommy Hilfiger, Heineken en Bacardi. Ik was actief als onderdeel van promotieteams, als host en in de horeca bij zowel kleinschalige als grootschalige evenementen. Deze werkzaamheden vonden voornamelijk plaats in Amsterdam en omstreken.</p>
+                    <div class="volunteer-grid">
+                        <div class="volunteer-card">
+                            <div class="card-icon">
+                                <i class="fas fa-globe-asia"></i>
+                            </div>
+                            <h3>Vrijwilliger</h3>
+                            <p class="company">Positive Kids/Positive Cycle Japan</p>
+                            <p class="period">2025 | Tokyo, Japan</p>
+                            <p class="description">Tijdens mijn reis door Japan heb ik tijdelijk meegewerkt bij de organisatie Positive Kids, waar ik op een spelende wijze Engelse lesgaf aan Japanse kinderen in een buitenschoolse opvang.</p>
+                        </div>
+                        
+                        <div class="volunteer-card">
+                            <div class="card-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Vrijwilliger</h3>
+                            <p class="company">SAVE Foundation</p>
+                            <p class="period">2017 | Kaapstad, Zuid-Afrika</p>
+                            <p class="description">In het hart van de townships van Kaapstad had ik het voorrecht om mijn tijd als vrijwilliger door te brengen. Ik gaf Engelse lessen aan de lokale jeugd en introduceerde hen in het plezier van surfen.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="entry">
-                    <p><strong>Bestuursfunctie, Hoofd Media</strong></p>
-                    <p>Studievereniging B-Change</p>
-                    <p>2023 – 2024, Nijmegen</p>
-                    <div class="dropdown-content">
-                        <p>Ik vervulde de rol van Hoofd Media bij studievereniging B-Change, verbonden aan de opleiding Behaviour Change aan de Radboud Universiteit. In deze functie was ik verantwoordelijk voor het verspreiden van nieuws naar zowel onze interne leden als externe belanghebbenden en het onderhouden van de nieuws kanalen, zoals de website. Daarnaast ben ik actief geweest in de activiteitencommissie en de jaarboekcommissie.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <p><strong>Onderzoeksstagiair</strong></p>
-                    <p>Procore/Optimum - Tilburg University</p>
-                    <p>2020 – 2021, Tilburg</p>
-                    <div class="dropdown-content">
-                        <p>Als onderzoeksstagiair droeg ik bij aan de Procore- en OPTIMUM-studies: onderzoek naar optimale zorg voor postmenopauzale borstkankerpatiënten. Mijn verantwoordelijkheden omvatten het transcriberen van interviews, het beheren van data-invoer en het voorbereiden van bloedmonsters.</p>
-                    </div>
-                </div>
-                 <div class="entry">
-                    <p><strong>Host</strong></p>
-                    <p>Willem II</p>
-                    <p>2020 – 2021, Tilburg</p>
-                    <div class="dropdown-content">
-                        <p>Medeverantwoordelijk voor de begeleiding van wedstrijddagbezoekers met eerste-rang- of skyboxtickets.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <p><strong>Evementen en horeca medewerker</strong></p>
-                    <p>Van der Valk</p>
-                    <p>2019 – 2020, Tilburg</p>
-                    <div class="dropdown-content">
-                        <p>Bij Van der Valk Exclusief heb ik gewerkt totdat de Corona periode begon. In dit hotel van een hoger segment hield ik mij bezig met de bediening, bar en het organiseren van evenementen. Het hotel bood hoogwaardige diensten, waardoor ik veel ervaring heb opgedaan in verschillende aspecten van de horeca industrie.</p>
-                    </div>
-                </div>
-                <div class="entry">
-                    <p><strong>Evementen en horeca medewerker</strong></p>
-                    <p>Parkhotel Horst</p>
-                    <p>2016 – 2020, Horst</p>
-                    <div class="dropdown-content">
-                        <p>Met een breed scala aan taken was ik mede verantwoordelijk voor de dagelijkse horeca-operaties. Als 16-jarige begon ik voornamelijk in de bediening en achter de bar. Uiteindelijk groeide ik door naar het beheren van grootschalige evenementen en het coördineren van hospitality voor internationale voetbaltrainingskampen, waaronder eerste teams zoals Ajax en FC Porto.</p>
-                    </div>
-                </div>
-                </div>
-            
-<div class="section">
-  <h2>VRIJWILLIGERSWERK</h2>
+                </section>
 
-  <div class="entry">
-    <p><strong>Vrijwilliger</strong></p>
-    <p>Positive Kids/Positive Cycle Japan</p>
-    <p>2025, Tokyo - Japan</p>
-    <div class="dropdown-content">
-      <p>Tijdens mijn reis door Japan heb ik tijdelijk meegewerkt bij de organisatie Positive Kids, waar ik op een spelende wijze Engelse lesgaf aan Japanse kinderen in een buitenschoolse opvang.</p>
-    </div>
-  </div>
-</div>
-    
-  <div class="entry">
-    <p><strong>Vrijwilliger</strong></p>
-    <p>SAVE Foundation</p>
-    <p>2017, Kaapstad - Zuid Afrika</p>
-    <div class="dropdown-content">
-      <p>In het hart van de townships van Kaapstad had ik het voorrecht om mijn tijd als vrijwilliger door te brengen. Ik gaf Engelse lessen aan de lokale jeugd en introduceerde hen in het plezier van surfen.</p>
-    </div>
-  </div>
+                <!-- Languages & Skills -->
+                <section id="languages" class="section">
+                    <div class="section-header">
+                        <h2>Talen & Vaardigheden</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <span class="flag">🇳🇱</span>
+                            <div class="language-info">
+                                <h3>Nederlands</h3>
+                                <p>Moedertaal</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="flag">🇬🇧</span>
+                            <div class="language-info">
+                                <h3>Engels</h3>
+                                <p>Uitstekend, professionele vaardigheden</p>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="flag">🇩🇪</span>
+                            <div class="language-info">
+                                <h3>Duits</h3>
+                                <p>Goed, basisvaardigheden</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <div class="section">
-                <h2>TALEN</h2>
-                <p>🇳🇱 Nederlands – moedertaal</p>
-                <p>🇬🇧 Engels – uitstekend, professionele vaardigheden</p>
-                <p>🇩🇪 Duits – goed, basis vaardigheden</p>
+                <!-- Contact Section -->
+                <section id="contact" class="section">
+                    <div class="section-header">
+                        <h2>Contact</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:thomascortenbach@home.nl">thomascortenbach@home.nl</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Telefoon</h3>
+                                    <a href="tel:+31618887118">+31 6 1888 7118</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <h3>LinkedIn</h3>
+                                    <a href="https://www.linkedin.com/in/tomascorten/" target="_blank">linkedin.com/in/tomascorten</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="far fa-image"></i>
+                                <div>
+                                    <h3>Portfolio</h3>
+                                    <a href="https://bachskie.github.io/portfolio/" target="_blank">bachskie.github.io/portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
+        </main>
 
-            <div class="section">
-                <h2>SOCIALE MEDIA</h2>
-                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tomascorten/">Linkedin</a></p>
-                <p><i class="far fa-image"></i> <a href="https://bachskie.github.io/portfolio/">portfolio</a></p>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Thomas Cortenbach. Designed & Built by Thomas Cortenbach</p>
             </div>
-        
-            <div class="section" id="contact">
-                <h2>CONTACT</h2>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:thomascortenbach@home.nl">thomascortenbach@home.nl</a></p>
-                <p><i class="fas fa-phone"></i> <strong>+31 0618887118</strong></p>
-            </div>
-        </div>
-    <script src="Resume.js"></script>
-</body>
+        </footer>
+
+        <script src="Resume.js"></script>
+    </body>
 </html>
