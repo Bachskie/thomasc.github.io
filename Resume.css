@@ -307,6 +307,17 @@ body {
     transform: scale(1.1);
 }
 
+/* Mobile-specific image visibility */
+@media (max-width: 768px) {
+    .gallery-item {
+        display: none;
+    }
+    
+    .gallery-item:nth-child(3) {
+        display: block;
+    }
+}
+
 /* ==========================================================================
    Main Content Sections
    ========================================================================== */
@@ -864,8 +875,10 @@ body {
     }
     
     .image-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0.75rem;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
     .content-wrapper {
