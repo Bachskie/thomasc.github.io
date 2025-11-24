@@ -1,0 +1,672 @@
+/* ==========================================================================
+   One-Page Resume CSS - Professional Print-Ready Style
+   ========================================================================== */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette - Teal & Navy Professional */
+    --primary-color: #1e3a5f;
+    --secondary-color: #2c5f8d;
+    --accent-color: #14b8a6;
+    --accent-light: #2dd4bf;
+    --text-primary: #1e3a5f;
+    --text-secondary: #475569;
+    --text-light: #64748b;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f1f5f9;
+    --bg-accent: #f0fdfa;
+    --border-color: #cbd5e0;
+    --highlight-color: #14b8a6;
+    --shadow-color: rgba(20, 184, 166, 0.15);
+    
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { 
+        font-family: 'InterVariable', var(--font-family); 
+    }
+}
+
+body {
+    font-family: var(--font-family);
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    color: var(--text-primary);
+    background: #e2e8f0;
+    background-attachment: fixed;
+    line-height: 1.6;
+    padding: 3rem 1rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   Download PDF Button
+   ========================================================================== */
+
+.download-pdf-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 
+        0 4px 6px rgba(20, 184, 166, 0.3),
+        0 10px 20px rgba(20, 184, 166, 0.2);
+    z-index: 1000;
+    font-family: var(--font-family);
+}
+
+.download-pdf-btn:active {
+    transform: translateY(0);
+}
+
+.download-pdf-btn i {
+    font-size: 1.1rem;
+}
+
+/* ==========================================================================
+   Resume Container
+   ========================================================================== */
+
+.resume-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 
+        0 0 0 1px rgba(0, 0, 0, 0.08),
+        0 10px 15px -3px rgba(0, 0, 0, 0.15),
+        0 20px 25px -5px rgba(0, 0, 0, 0.12),
+        0 0 80px -20px var(--shadow-color);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ==========================================================================
+   Header Section
+   ========================================================================== */
+
+.resume-header {
+    background: #14b8a6;
+    color: white;
+    padding: 2.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-pattern {
+    display: none;
+}
+
+.header-left h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    color: white;
+}
+
+.header-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem 1.5rem;
+}
+
+.header-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.header-links i {
+    width: 16px;
+    text-align: center;
+}
+
+.header-right {
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   Content Layout
+   ========================================================================== */
+
+.resume-content {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    gap: 3rem;
+    padding: 2.5rem 3rem 2rem;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.resume-section {
+    margin-bottom: 1.5rem;
+}
+
+.resume-section h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, var(--accent-color), var(--accent-light)) 1;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.resume-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-light));
+}
+
+.resume-section p {
+    color: #2d3748;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Experience Items
+   ========================================================================== */
+
+.experience-item {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+    gap: 1rem;
+}
+
+.exp-header h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+}
+
+.exp-header .date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.experience-item .company {
+    color: var(--highlight-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.4rem;
+}
+
+.experience-item .description {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   Education Items
+   ========================================================================== */
+
+.education-item {
+    margin-bottom: 1.25rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.education-item .institution {
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}
+
+.education-item .date {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.education-item .detail {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   Skills Section
+   ========================================================================== */
+
+.skills-category {
+    margin-bottom: 1rem;
+}
+
+.skills-category h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-category li {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.skills-category li::before {
+    content: "▹";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+/* ==========================================================================
+   Languages Section
+   ========================================================================== */
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.language-item:last-child {
+    border-bottom: none;
+}
+
+.lang-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+}
+
+.lang-level {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+/* ==========================================================================
+   Interests Section
+   ========================================================================== */
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.interest-tag {
+    background: linear-gradient(135deg, var(--bg-secondary), var(--bg-accent));
+    color: var(--text-primary);
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1.5px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.interest-tag::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 1.5px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.interest-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.interest-tag:hover::before {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .download-pdf-btn {
+        top: 1rem;
+        right: 1rem;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.85rem;
+    }
+    
+    .download-pdf-btn span {
+        display: none;
+    }
+    
+    .download-pdf-btn i {
+        margin: 0;
+    }
+    
+    body {
+        padding: 1rem 0.5rem;
+    }
+    
+    .resume-container {
+        border-radius: 0;
+    }
+    
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
+    
+    .header-left h1 {
+        font-size: 2rem;
+    }
+    
+    .header-links {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    
+    .header-links a {
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .resume-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .resume-section h2 {
+        font-size: 1.25rem;
+    }
+    
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .exp-header h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .header-left h1 {
+        font-size: 1.75rem;
+    }
+    
+    .resume-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .download-pdf-btn {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .resume-container {
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        page-break-inside: avoid;
+    }
+    
+    .resume-header {
+        background: #14b8a6 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        padding: 1.5rem 2rem;
+        page-break-after: avoid;
+    }
+    
+    .header-left h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+        color: white !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        -webkit-text-fill-color: white;
+        background: none;
+    }
+    
+    .header-links {
+        gap: 0.25rem 1rem;
+    }
+    
+    .header-links a {
+        font-size: 0.7rem;
+    }
+    
+    .profile-photo {
+        width: 100px;
+        height: 130px;
+    }
+    
+    .resume-content {
+        padding: 1.5rem 2rem;
+        gap: 2rem;
+    }
+    
+    .resume-section {
+        margin-bottom: 1rem;
+    }
+    
+    .resume-section h2 {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .resume-section p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-item {
+        margin-bottom: 0.85rem;
+        padding: 0.75rem;
+        page-break-inside: avoid;
+    }
+    
+    .exp-header h3 {
+        font-size: 0.875rem;
+    }
+    
+    .experience-item .company {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .experience-item .description {
+        font-size: 0.775rem;
+        line-height: 1.4;
+    }
+    
+    .education-item {
+        margin-bottom: 1rem;
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+        page-break-inside: avoid;
+    }
+    
+    .education-item h3 {
+        font-size: 0.875rem;
+    }
+    
+    .education-item .institution,
+    .education-item .date {
+        font-size: 0.75rem;
+    }
+    
+    .education-item .detail {
+        font-size: 0.75rem;
+    }
+    
+    .skills-category {
+        margin-bottom: 0.75rem;
+    }
+    
+    .skills-category h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .skills-category li {
+        font-size: 0.75rem;
+        padding: 0.15rem 0;
+    }
+    
+    .language-item {
+        padding: 0.3rem 0;
+    }
+    
+    .lang-name {
+        font-size: 0.8rem;
+    }
+    
+    .lang-level {
+        font-size: 0.75rem;
+    }
+    
+    .interest-tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .header-pattern {
+        display: none;
+    }
+}
